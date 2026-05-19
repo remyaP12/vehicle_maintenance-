@@ -1,7 +1,14 @@
 # Predictive Vehicle maintenance
 
 This project develops a hybrid deep learning model for predictive vehicle maintenance using real OBD (On-Board Diagnostics) sensor data collected from commercial cars. The dataset contains over 120,000 data points with 17 features including Engine RPM, Throttle Position, Engine Load, MAF sensor, and Engine Coolant Temperature.
-<img width="419" height="177" alt="image" src="https://github.com/user-attachments/assets/4d4e9d7c-d724-477b-8c01-b5c3b68872a3" /><center>Methodology  Workflow</center>
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/4d4e9d7c-d724-477b-8c01-b5c3b68872a3" width="600"/>
+</p>
+
+<p align="center">
+  <b>Methodology  Workflow</b>
+</p>
+
 
 The core approach combines LSTM (Long Short-Term Memory) neural networks with K-Means clustering to predict engine health without requiring labeled failure data. K-Means first groups sensor readings into 2 operational clusters — low throttle/low RPM and high throttle/high RPM — and these cluster labels are fed as engineered features into the LSTM pipeline. Preprocessing involved MinMax Scaling, Robust Scaling for outlier-resistant features, and 30-step sequence windowing to capture temporal patterns.
 <img width="485" height="428" alt="image" src="https://github.com/user-attachments/assets/22812c8f-ce3d-4749-931f-a05cd64c029b" />Heatmap of correlation matrix of the selected features.
